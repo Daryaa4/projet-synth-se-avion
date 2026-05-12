@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-aero_m = aero_model.Airbus_A319_100()
+aero_m = aero_model.Airbus_A321_200()
 print(f'{aero_m.name}')
 aero_m.set_options(stall=False, buffeting=False, wave_drag=False)
 aero_m.set_mass(aero_m.m_design) 
@@ -29,7 +29,7 @@ plt.show()
 
 
 
-aero_m = aero_model.Airbus_A319_100()
+aero_m = aero_model.Airbus_A321_200()
 print(f'{aero_m.name}')
 aero_m.set_options(stall=False, buffeting=False, wave_drag=False)
 aero_m.set_mass(aero_m.m_design) 
@@ -54,7 +54,7 @@ plt.grid(True)
 plt.show()
 
 
-aero_m = aero_model.Airbus_A319_100()
+aero_m = aero_model.Airbus_A321_200()
 print(f'{aero_m.name}')
 aero_m.set_options(stall=True, buffeting=False, wave_drag=False)
 aero_m.set_mass(aero_m.m_design) 
@@ -79,7 +79,7 @@ plt.grid(True)
 plt.show()
 
 
-aero_m = aero_model.Airbus_A319_100()
+aero_m = aero_model.Airbus_A321_200()
 print(f'{aero_m.name}')
 aero_m.set_options(stall=False, buffeting=False, wave_drag=True)
 aero_m.set_mass(aero_m.m_design) 
@@ -104,7 +104,7 @@ plt.grid(True)
 plt.show()
 
 
-aero_m = aero_model.Airbus_A319_100()
+aero_m = aero_model.Airbus_A321_200()
 print(f'{aero_m.name}')
 aero_m.set_options(stall=False, buffeting=False, wave_drag=False)
 aero_m.set_mass(aero_m.m_design) 
@@ -128,7 +128,7 @@ plt.legend()
 plt.show()
 
 
-aero_m = aero_model.Airbus_A319_100()
+aero_m = aero_model.Airbus_A321_200()
 aero_m.set_options(stall=False, buffeting=False, wave_drag=False)
 aero_m.set_mass(aero_m.m_design)
 
@@ -163,7 +163,7 @@ plt.show()
 
 
 
-aero_m = aero_model.Airbus_A319_100()
+aero_m = aero_model.Airbus_A321_200()
 aero_m.set_options(stall=False, buffeting=False, wave_drag=False)
 aero_m.set_mass(aero_m.m_design)
 
@@ -195,7 +195,7 @@ plt.legend()
 plt.show()
 
 
-aero_m = aero_model.Airbus_A319_100()
+aero_m = aero_model.Airbus_A321_200()
 print(f'{aero_m.name}')
 aero_m.set_options(stall=True, buffeting=False, wave_drag=False)
 aero_m.set_mass(aero_m.m_design) 
