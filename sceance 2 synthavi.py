@@ -12,14 +12,14 @@ hs = np.linspace(4000, 10000, 15)      # altitudes (m)
 machs = [0.4, 0.6, 0.8]                # nombres de Mach
 static_margins = [0.2, 0.6, 1.0]       # marges statiques
 mass_coeffs = [0.1, 0.5, 1.0]          # coefficients de masse
+aero_m = aero_model.Airbus_A321_200()    # création du modèle avion
 for ms in static_margins:
-    for km in mass_coeffs:
-        aero_m = aero_model.Airbus_A321_200()  # création du modèle avion
+    for km in mass_coeffs: 
         aero_m.set_static_margin(ms)
         aero_m.set_mass(km * aero_m.m_design)
         aero_m.set_options(stall=True,buffeting=True,wave_drag=True)
         fig, axes = plt.subplots(3, 1, figsize=(8, 10))
-        fig.suptitle( f"Trim A319 | ms={ms:.1f} | km={km:.1f}",fontsize=14)
+        fig.suptitle( f"Trim A321_200 | ms={ms:.1f} | km={km:.1f}",fontsize=14)
         for mach in machs:
             aoas = []      # angle d’attaque
             dtrims = []    # trim profondeur
