@@ -5,7 +5,7 @@ import dynamic
 import atmosphere
 from scipy.integrate import odeint
 
-
+## QUESTION 1
 """ valeur propre suivant altitude"""
 aero_m = aero_model.Airbus_A321_200()
 mach = 0.6
@@ -144,6 +144,7 @@ ax.grid(True)
 plt.show()
 
 
+#QUESTION 2
 """
 mach = 0.6
 h = 6000
@@ -258,7 +259,7 @@ plt.tight_layout()
 plt.show()
 
 
-
+#QUESTION 3
 atm = atmosphere.AtmosphereISA()
 avion = aero_model.Airbus_A321_200(atm)
 avion.set_mass_from_km(0.5)
@@ -353,7 +354,7 @@ plt.show()
 
 
 
-
+#QUESTION 4
 # TRIM 1 : point autour duquel on construit le modèle linéaire
 atm = atmosphere.AtmosphereISA()
 avion1 = aero_model.Airbus_A321_200(atm)
